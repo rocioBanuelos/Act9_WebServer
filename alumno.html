@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <title>Calificación de una materia para un alumno</title>
+        </head>
+        <style>
+            #alumnoForm{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+            margin: 25px 50px;
+            padding: 15px;
+            }
+            #alumnoForm label{
+            font-family: 'Roboto';
+            font-size: 16px;
+            width: 30%;
+            margin: 5px 0;
+            padding: 5px 10px;
+            }
+            #alumnoForm input{
+            width: 50%;
+            margin: 5px 0;
+            padding: 5px 10px;
+            }
+            button {
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: black;
+            margin: 20px auto; 
+            }
+            button:hover {
+            transform: scale(1.05); 
+            }
+
+        </style>
+    </html>
+    <body>
+        <label>Agregar la calificación de una materia para un alumno</label>
+        <br><br>
+        <form action="/alumno" method="POST" id="alumnoForm">
+            <label>Nombre del alumno:</label>
+            <br>
+            <input type="text" name="nombreAlumno" value="">
+            <br>
+            <label>Nombre de la materia:</label>
+            <br>
+            <input type="text" name="materia" value="">
+            <br>
+            <label>Calificación:</label>
+            <br>
+            <input type="text" name="calificacion" value=""> 
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+        <br>
+        <button onclick="location.href='http://localhost:9000/'" type="button">Regresar al menú</button>
+    </body>
+</DOCTYPE>
